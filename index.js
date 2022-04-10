@@ -4,7 +4,7 @@ var port = process.env.PORT | 80 ;
 
 app.use('/',express.static(__dirname + '/public'))
 
-app.get('/hi', function(request, response) {
+app.get('/', function(request, response) {
   response.send('Hello World!')
 })
 
